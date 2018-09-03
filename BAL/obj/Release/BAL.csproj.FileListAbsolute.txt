@@ -1,0 +1,11 @@
+D:\project\salesmanager\BAL\bin\Release\BAL.dll
+D:\project\salesmanager\BAL\bin\Release\BAL.pdb
+D:\project\salesmanager\BAL\bin\Release\DAL.dll
+D:\project\salesmanager\BAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\project\salesmanager\BAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\project\salesmanager\BAL\bin\Release\DAL.pdb
+D:\project\salesmanager\BAL\obj\Release\BAL.csproj.CoreCompileInputs.cache
+D:\project\salesmanager\BAL\obj\Release\BAL.csproj.CopyComplete
+D:\project\salesmanager\BAL\obj\Release\BAL.dll
+D:\project\salesmanager\BAL\obj\Release\BAL.pdb
+D:\project\salesmanager\BAL\obj\Release\BAL.csprojAssemblyReference.cache

@@ -1,0 +1,5 @@
+D:\project\salesmanager\Utils\bin\Debug\Utils.dll
+D:\project\salesmanager\Utils\bin\Debug\Utils.pdb
+D:\project\salesmanager\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
+D:\project\salesmanager\Utils\obj\Debug\Utils.dll
+D:\project\salesmanager\Utils\obj\Debug\Utils.pdb

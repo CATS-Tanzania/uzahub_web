@@ -1,0 +1,8 @@
+D:\project\salesmanager\DAL\bin\Debug\DAL.dll
+D:\project\salesmanager\DAL\bin\Debug\DAL.pdb
+D:\project\salesmanager\DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\project\salesmanager\DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\project\salesmanager\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\project\salesmanager\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\project\salesmanager\DAL\obj\Debug\DAL.dll
+D:\project\salesmanager\DAL\obj\Debug\DAL.pdb

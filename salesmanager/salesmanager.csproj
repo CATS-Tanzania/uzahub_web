@@ -1,0 +1,471 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E0BCE80-7AC0-40C9-B338-6F8561846704}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>salesmanager</RootNamespace>
+    <AssemblyName>salesmanager</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\lncDoc\Licence\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="composer.json" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="packages.config" />
+    <Content Include="img\googleplay.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\pluse.png" />
+    <Content Include="pages\dashboard.aspx" />
+    <Content Include="pages\en_assignjob.aspx" />
+    <Content Include="pages\en_expensetype.aspx" />
+    <Content Include="pages\en_expense.aspx" />
+    <Content Include="pages\info_soldItem.aspx" />
+    <Content Include="pages\en_sale.aspx" />
+    <Content Include="pages\en_stockmove.aspx" />
+    <Content Include="pages\en_stockin.aspx" />
+    <Content Include="pages\en_product.aspx" />
+    <Content Include="pages\en_category.aspx" />
+    <Content Include="pages\en_customer.aspx" />
+    <Content Include="pages\en_userprofile.aspx" />
+    <Content Include="pages\en_user.aspx" />
+    <Content Include="pages\en_usertype.aspx" />
+    <Content Include="pages\forms.html" />
+    <Content Include="pages\en_branch.aspx" />
+    <Content Include="pages\info_assignjob.aspx" />
+    <Content Include="pages\info_expapprove.aspx" />
+    <Content Include="pages\info_expensetype.aspx" />
+    <Content Include="pages\info_expense.aspx" />
+    <Content Include="pages\info_sale.aspx" />
+    <Content Include="pages\info_stockmove.aspx" />
+    <Content Include="pages\info_stockin.aspx" />
+    <Content Include="pages\info_product.aspx" />
+    <Content Include="pages\info_category.aspx" />
+    <Content Include="pages\info_customer.aspx" />
+    <Content Include="pages\info_usertype.aspx" />
+    <Content Include="pages\info_ticket.aspx" />
+    <Content Include="pages\rp_expense.aspx" />
+    <Content Include="pages\rp_sale.aspx" />
+    <Content Include="pages\info_branch.aspx" />
+    <Content Include="pages\rp_assignjob.aspx" />
+    <Content Include="pages\rp_stockin.aspx" />
+    <Content Include="pages\info_user.aspx" />
+    <Content Include="pages\tables.html" />
+    <Content Include="sales.Master" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-social.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\dataTables\dataTables.bootstrap.css" />
+    <Content Include="css\dataTables\dataTables.responsive.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\metisMenu.min.css" />
+    <Content Include="css\morris.css" />
+    <Content Include="css\startmin.css" />
+    <Content Include="css\timeline.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ilogin.aspx" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\dataTables\dataTables.bootstrap.min.js" />
+    <Content Include="js\dataTables\jquery.dataTables.min.js" />
+    <Content Include="js\flot-data.js" />
+    <Content Include="js\flot\excanvas.min.js" />
+    <Content Include="js\flot\jquery.colorhelpers.js" />
+    <Content Include="js\flot\jquery.flot.canvas.js" />
+    <Content Include="js\flot\jquery.flot.categories.js" />
+    <Content Include="js\flot\jquery.flot.crosshair.js" />
+    <Content Include="js\flot\jquery.flot.errorbars.js" />
+    <Content Include="js\flot\jquery.flot.fillbetween.js" />
+    <Content Include="js\flot\jquery.flot.image.js" />
+    <Content Include="js\flot\jquery.flot.js" />
+    <Content Include="js\flot\jquery.flot.navigate.js" />
+    <Content Include="js\flot\jquery.flot.pie.js" />
+    <Content Include="js\flot\jquery.flot.resize.js" />
+    <Content Include="js\flot\jquery.flot.selection.js" />
+    <Content Include="js\flot\jquery.flot.stack.js" />
+    <Content Include="js\flot\jquery.flot.symbol.js" />
+    <Content Include="js\flot\jquery.flot.threshold.js" />
+    <Content Include="js\flot\jquery.flot.time.js" />
+    <Content Include="js\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\metisMenu.min.js" />
+    <Content Include="js\morris-data.js" />
+    <Content Include="js\morris.min.js" />
+    <Content Include="js\raphael.min.js" />
+    <Content Include="js\startmin.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ilogin.aspx.cs">
+      <DependentUpon>ilogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ilogin.aspx.designer.cs">
+      <DependentUpon>ilogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_assignjob.aspx.cs">
+      <DependentUpon>en_assignjob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_assignjob.aspx.designer.cs">
+      <DependentUpon>en_assignjob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_expensetype.aspx.cs">
+      <DependentUpon>en_expensetype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_expensetype.aspx.designer.cs">
+      <DependentUpon>en_expensetype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_expense.aspx.cs">
+      <DependentUpon>en_expense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_expense.aspx.designer.cs">
+      <DependentUpon>en_expense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_soldItem.aspx.cs">
+      <DependentUpon>info_soldItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_soldItem.aspx.designer.cs">
+      <DependentUpon>info_soldItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_sale.aspx.cs">
+      <DependentUpon>en_sale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_sale.aspx.designer.cs">
+      <DependentUpon>en_sale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_stockmove.aspx.cs">
+      <DependentUpon>en_stockmove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_stockmove.aspx.designer.cs">
+      <DependentUpon>en_stockmove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_stockin.aspx.cs">
+      <DependentUpon>en_stockin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_stockin.aspx.designer.cs">
+      <DependentUpon>en_stockin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_product.aspx.cs">
+      <DependentUpon>en_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_product.aspx.designer.cs">
+      <DependentUpon>en_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_category.aspx.cs">
+      <DependentUpon>en_category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_category.aspx.designer.cs">
+      <DependentUpon>en_category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_customer.aspx.cs">
+      <DependentUpon>en_customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_customer.aspx.designer.cs">
+      <DependentUpon>en_customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_userprofile.aspx.cs">
+      <DependentUpon>en_userprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_userprofile.aspx.designer.cs">
+      <DependentUpon>en_userprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_user.aspx.cs">
+      <DependentUpon>en_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_user.aspx.designer.cs">
+      <DependentUpon>en_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_usertype.aspx.cs">
+      <DependentUpon>en_usertype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_usertype.aspx.designer.cs">
+      <DependentUpon>en_usertype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en_branch.aspx.cs">
+      <DependentUpon>en_branch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en_branch.aspx.designer.cs">
+      <DependentUpon>en_branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_assignjob.aspx.cs">
+      <DependentUpon>info_assignjob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_assignjob.aspx.designer.cs">
+      <DependentUpon>info_assignjob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_expapprove.aspx.cs">
+      <DependentUpon>info_expapprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_expapprove.aspx.designer.cs">
+      <DependentUpon>info_expapprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_expensetype.aspx.cs">
+      <DependentUpon>info_expensetype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_expensetype.aspx.designer.cs">
+      <DependentUpon>info_expensetype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_expense.aspx.cs">
+      <DependentUpon>info_expense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_expense.aspx.designer.cs">
+      <DependentUpon>info_expense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_sale.aspx.cs">
+      <DependentUpon>info_sale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_sale.aspx.designer.cs">
+      <DependentUpon>info_sale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_stockmove.aspx.cs">
+      <DependentUpon>info_stockmove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_stockmove.aspx.designer.cs">
+      <DependentUpon>info_stockmove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_stockin.aspx.cs">
+      <DependentUpon>info_stockin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_stockin.aspx.designer.cs">
+      <DependentUpon>info_stockin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_product.aspx.cs">
+      <DependentUpon>info_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_product.aspx.designer.cs">
+      <DependentUpon>info_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_category.aspx.cs">
+      <DependentUpon>info_category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_category.aspx.designer.cs">
+      <DependentUpon>info_category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_customer.aspx.cs">
+      <DependentUpon>info_customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_customer.aspx.designer.cs">
+      <DependentUpon>info_customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_usertype.aspx.cs">
+      <DependentUpon>info_usertype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_usertype.aspx.designer.cs">
+      <DependentUpon>info_usertype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_ticket.aspx.cs">
+      <DependentUpon>info_ticket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_ticket.aspx.designer.cs">
+      <DependentUpon>info_ticket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\rp_expense.aspx.cs">
+      <DependentUpon>rp_expense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\rp_expense.aspx.designer.cs">
+      <DependentUpon>rp_expense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\rp_sale.aspx.cs">
+      <DependentUpon>rp_sale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\rp_sale.aspx.designer.cs">
+      <DependentUpon>rp_sale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_branch.aspx.cs">
+      <DependentUpon>info_branch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_branch.aspx.designer.cs">
+      <DependentUpon>info_branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\rp_assignjob.aspx.cs">
+      <DependentUpon>rp_assignjob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\rp_assignjob.aspx.designer.cs">
+      <DependentUpon>rp_assignjob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\rp_stockin.aspx.cs">
+      <DependentUpon>rp_stockin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\rp_stockin.aspx.designer.cs">
+      <DependentUpon>rp_stockin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\info_user.aspx.cs">
+      <DependentUpon>info_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\info_user.aspx.designer.cs">
+      <DependentUpon>info_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sales.Master.cs">
+      <DependentUpon>sales.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sales.Master.designer.cs">
+      <DependentUpon>sales.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{e0ba3807-87c2-4a77-adb7-79a035a28dc4}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{94383dc4-9e7a-4475-b058-67ec15498415}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53571</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53571/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

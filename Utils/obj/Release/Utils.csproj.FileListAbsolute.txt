@@ -1,0 +1,6 @@
+D:\project\salesmanager\Utils\bin\Release\Utils.dll
+D:\project\salesmanager\Utils\bin\Release\Utils.pdb
+D:\project\salesmanager\Utils\obj\Release\Utils.csproj.CoreCompileInputs.cache
+D:\project\salesmanager\Utils\obj\Release\Utils.dll
+D:\project\salesmanager\Utils\obj\Release\Utils.pdb
+D:\project\salesmanager\Utils\obj\Release\Utils.csprojAssemblyReference.cache
